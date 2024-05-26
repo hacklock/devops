@@ -1,11 +1,11 @@
 
-# Prerequisitos
+# Pre-requisitos
 
 - 4 máquinas virtuais com 2/4 processadores e 6/8 gb de memória ram
 - 1 domínio
 - Sistema operacional Ubuntu 16.04 LTS
 
-- Domínio usado pelo instrutor do curso é: dev-ops-ninja.com
+- Domínio usado pelo instrutor do curso é: devopsdosamba.com.br
 
 https://github.com/hacklock/devops
 
