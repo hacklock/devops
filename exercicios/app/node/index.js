@@ -45,7 +45,7 @@ app.get('/',function(req,res){
 		"Data":"",
 		"Hostname": process.env.HOSTNAME
 	};
-	data["Data"] = "Welcome to Jon's API";
+	data["Data"] = "Welcome to Devops do Samba's API";
 	res.json(data);
 	console.log(data);
 });
@@ -74,7 +74,7 @@ app.get('/html',function(req,res){
 		"Data":""
 	};
 	
-	data["Data"] = "API de Serviços do Jon";
+	data["Data"] = "API de Serviços da Devops do Samba";
 	data["Ver"] = "0.2";
 
 	var body = '<html>'
