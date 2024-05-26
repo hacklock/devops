@@ -18,7 +18,7 @@ https://github.com/hacklock/devops
 
 ```sh
 
-$ ssh -i devopsdosamba.pem ubuntu@<ip>  - RancherSerber - HOST A
+$ ssh -i devopsdosamba.pem ubuntu@<ip>  - Rancher-Server - HOST A
 $ ssh -i devopsdosamba.pem ubuntu@<ip>  - k8s-1         - HOST B
 $ ssh -i devopsdosamba.pem ubuntu@<ip>  - k8s-2         - HOST C
 $ ssh -i devopsdosamba.pem ubuntu@<ip>  - k8s-3         - HOST D
