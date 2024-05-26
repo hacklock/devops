@@ -1,26 +1,26 @@
 <center>
 <a href="https://github.com/hacklock/devops/stargazers">
-	<img src="https://img.shields.io/github/stars/jonathanbaraldi/devops" alt="Stars Badge"/>
+	<img src="https://img.shields.io/github/stars/hacklock/devops" alt="Stars Badge"/>
 </a>
-<a href="https://github.com/jonathanbaraldi/devops/network/members">
-	<img src="https://img.shields.io/github/forks/jonathanbaraldi/devops" alt="Forks Badge"/>
+<a href="https://github.com/hacklock/devops/network/members">
+	<img src="https://img.shields.io/github/forks/hacklock/devops" alt="Forks Badge"/>
 </a>
 <a href="https://github.com/jonathanbaraldi/devops/pulls">
-	<img src="https://img.shields.io/github/issues-pr/jonathanbaraldi/devops" alt="Pull Requests Badge"/>
+	<img src="https://img.shields.io/github/issues-pr/hacklock/devops" alt="Pull Requests Badge"/>
 </a>
 <a href="https://github.com/jonathanbaraldi/devops/issues">
-	<img src="https://img.shields.io/github/issues/jonathanbaraldi/devops" alt="Issues Badge"/>
+	<img src="https://img.shields.io/github/issues/hacklock/devops" alt="Issues Badge"/>
 </a>
-<a href="https://github.com/jonathanbaraldi/devops/graphs/contributors">
-	<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/jonathanbaraldi/devops?color=2b9348">
+<a href="https://github.com/hacklock/devops/graphs/contributors">
+	<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/hacklock/devops?color=2b9348">
 </a>
-<a href="https://github.com/jonathanbaraldi/devops/blob/master/LICENSE">
-	<img src="https://img.shields.io/github/license/jonathanbaraldi/devops?color=2b9348" alt="License Badge"/>
+<a href="https://github.com/hacklock/devops/blob/master/LICENSE">
+	<img src="https://img.shields.io/github/license/hacklock/devops?color=2b9348" alt="License Badge"/>
 </a>
 
 </center>
 
-# devops
+# Support by Devops Engineer
 Material da DevOps do Samba
 
 Vem pra cá dançar com as pipelines!
