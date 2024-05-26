@@ -7,7 +7,7 @@
 
 - Domínio usado pelo instrutor do curso é: dev-ops-ninja.com
 
-https://github.com/jonathanbaraldi/devops
+https://github.com/hacklock/devops
 
 
 # Aula 4 - Ambiente
