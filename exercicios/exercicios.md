@@ -74,11 +74,11 @@ Com isso temos o container do Redis rodando na porta 6379.
 Iremos fazer o build do container do NodeJs, que contém a nossa aplicação.
 ```sh
 $ cd ../node
-$ docker build -t <dockerhub-user>/node:devops .
+$ docker build -t devopsdosamba2024/node:devops .
 ```
 Agora iremos rodar a imagem do node, fazendo a ligação dela com o container do Redis.
 ```sh
-$ docker run -d --name node -p 8080:8080 --link redis <dockerhub-user>/node:devops
+$ docker run -d --name node -p 8080:8080 --link redis devopsdosamba2024/node:devops
 $ docker ps 
 $ docker logs node
 ```
@@ -90,11 +90,11 @@ Com isso temos nossa aplicação rodando, e conectada no Redis. A api para verif
 Iremos fazer o build do container do nginx, que será nosso balanceador de carga.
 ```sh
 $ cd ../nginx
-$ docker build -t <dockerhub-user>/nginx:devops .
+$ docker build -t devopsdosamba2024/nginx:devops .
 ```
 Criando o container do nginx a partir da imagem e fazendo a ligação com o container do Node
 ```sh
-$ docker run -d --name nginx -p 80:80 --link node <dockerhub-user>/nginx:devops
+$ docker run -d --name nginx -p 80:80 --link node devopsdosamba2024/nginx:devops
 $ docker ps
 ```
 Podemos acessar então nossa aplicação nas portas 80 e 8080 no ip da nossa instância.
@@ -113,8 +113,8 @@ Para rodar nosso docker-compose, precisamos remover todos os containers que est�
 É preciso editar o arquivo docker-compose.yml, onde estão os nomes das imagens e colocar o seu nome de usuário.
 
 - Linha 8 = <dockerhub-user>/nginx:devops
-- Linha 18 = image: <dockerhub-user>/redis:devops
-- Linha 37 = image: <dockerhub-user>/node:devops
+- Linha 18 = image: devopsdosamba2024/redis:devops
+- Linha 37 = image: devopsdosamba2024/node:devops
 
 Após alterar e colocar o nome correto das imagens, rodar o comando de up -d para subir a stack toda.
 
