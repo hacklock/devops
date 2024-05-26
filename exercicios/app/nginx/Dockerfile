@@ -2,7 +2,7 @@
 FROM nginx
 
 	# Autor/Mantenedor
-MAINTAINER Jonathan Baraldi
+MAINTAINER Devops do Samba
 
 	# Copiar configurações customizadas do diretório atual
 COPY nginx.conf /etc/nginx/nginx.conf
