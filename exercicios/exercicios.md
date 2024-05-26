@@ -12,16 +12,16 @@ https://github.com/hacklock/devops
 
 # Aula 4 - Ambiente
 	
-	Nesta aula, iremos verificar a instalação do Docker, e também iremos revisar a arquitetura do ambiente.
+	Eae Devopeiros tá no samba? agora iremos verificar a instalação do Docker, e também iremos revisar a arquitetura do ambiente.
 
 	É preciso entrar em todas as máquinas e instalar o Docker.
 
 ```sh
 
-$ ssh -i devops-ninja.pem ubuntu@<ip>  - RancherSerber - HOST A
-$ ssh -i devops-ninja.pem ubuntu@<ip>  - k8s-1         - HOST B
-$ ssh -i devops-ninja.pem ubuntu@<ip>  - k8s-2         - HOST C
-$ ssh -i devops-ninja.pem ubuntu@<ip>  - k8s-3         - HOST D
+$ ssh -i devopsdosamba.pem ubuntu@<ip>  - RancherSerber - HOST A
+$ ssh -i devopsdosamba.pem ubuntu@<ip>  - k8s-1         - HOST B
+$ ssh -i devopsdosamba.pem ubuntu@<ip>  - k8s-2         - HOST C
+$ ssh -i devopsdosamba.pem ubuntu@<ip>  - k8s-3         - HOST D
 
 $ sudo su
 $ curl https://releases.rancher.com/install-docker/19.03.sh | sh
@@ -36,7 +36,7 @@ $ usermod -aG docker ubuntu
 
 ### Fazer build das imagens, rodar docker-compose.
 
-Nesse exercício iremos construir as imagens dos containers que iremos usar, colocar elas para rodar em conjunto com o docker-compose. 
+Neste módulo iremos construir as imagens dos containers que iremos usar, colocar elas para rodar em conjunto com o docker-compose. 
 
 Sempre que aparecer <dockerhub-user>, você precisa substituir pelo seu usuário no DockerHub.
 
