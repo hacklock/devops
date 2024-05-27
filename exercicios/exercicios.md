@@ -10,7 +10,7 @@
 https://github.com/hacklock/devops
 
 
-# Aula 4 - Ambiente
+# Módulo 4 - Ambiente
 	
 	Eae Devopeiros tá no samba? agora iremos verificar a instalação do Docker, e também iremos revisar a arquitetura do ambiente.
 
@@ -32,7 +32,7 @@ $ usermod -aG docker ubuntu
 
 
 
-# Aula 5 - Construindo sua aplicação
+# Módulo 5 - Construindo sua aplicação
 
 ### Fazer build das imagens, rodar docker-compose.
 
@@ -144,7 +144,7 @@ $ docker-compose down
 
 
 
-# Aula 6 - Rancher - Single Node
+# Módulo 6 - Rancher - Single Node
 
 ### Instalar Rancher - Single Node
 
@@ -174,13 +174,13 @@ $ rancher.<dominio> = IP do host A
 
 
 
-# Aula 7 - Kubernetes
+# Módulo 7 - Kubernetes
 
 ### Criar cluster Kubernetes
 
 Nesse exercício iremos criar um cluster Kubernetes. Após criar o cluster, iremos instalar o kubectl no host A, e iremos usar para interagir com o cluster.
 
-Seguir as instruções na aula para fazer o deployment do cluster.
+Seguir as instruções na Módulo para fazer o deployment do cluster.
 Após fazer a configuração, o Rancher irá exibir um comando de docker run, para adicionar os host's.
 
 Adicionar o host B e host C. 
@@ -203,7 +203,7 @@ Navegar pelo Rancher e ver os painéis e funcionalidades.
 
 
 
-# Aula 8 - Kubectl
+# Módulo 8 - Kubectl
 
 ### Instalar kubectl no host A
 
@@ -232,7 +232,7 @@ $ kubectl get nodes
 
 
 
-# Aula 9 - DNS
+# Módulo 9 - DNS
 
 ### Traefik - DNS
 
@@ -257,7 +257,7 @@ $ kubectl apply -f ui.yml
 
 
 
-# Aula 10 - Volume
+# Módulo 10 - Volume
 
 ### Volumes
 
@@ -276,7 +276,7 @@ $ kubectl apply -f mariadb-longhorn-volume.yml
 
 
 
-# Aula 11 - LOG
+# Módulo 11 - LOG
 
 ### Graylog - LOG
 
@@ -304,7 +304,7 @@ Seguir os passos do instrutor para configuração do Graylog.
 
 
 
-# Aula 12 - Monitoramento
+# Módulo 12 - Monitoramento
 
 ### Grafana - MONITORAMENTO
 
@@ -323,7 +323,7 @@ Após o deploymnet, entrar no Grafana e Prometheus e mostrar seu funcionamento.
 
 
 
-# Aula 13 - CronJob
+# Módulo 13 - CronJob
 
 ### CronJob
 
@@ -358,7 +358,7 @@ Entrar no Rancher para ver os logs e a sequencia de execucao.
 
 
 
-# Aula 14 - ConfigMap
+# Módulo 14 - ConfigMap
 
 ### ConfigMap
 
@@ -382,7 +382,7 @@ Agora iremos entrar dentro do container e verificar as configurações definidas
 
 
 
-# Aula 15 - Secrets
+# Módulo 15 - Secrets
 
 ### Secrets
 
@@ -416,7 +416,7 @@ Agora com os secrets aplicados, iremos entrar dentro do container e ver como pod
 
 
 
-# Aula 16 - Liveness
+# Módulo 16 - Liveness
 
 ### Liveness
 
@@ -454,7 +454,7 @@ $ kubectl get pod liveness-http
 
 
 
-# Aula 17 - SetImage
+# Módulo 17 - SetImage
 
 ### SetImage
 
@@ -489,7 +489,7 @@ $ kubectl get pods -l app=nginx -L deployment
 
 
 
-# Aula 18 - Autoscaling
+# Módulo 18 - Autoscaling
 
 ### Autoscaling
 
@@ -545,7 +545,7 @@ $ kubectl get deployment php-apache
 
 
 
-# Aula 19 - Scheduling
+# Módulo 19 - Scheduling
 
 ### LABEL E SELETORES
 
@@ -571,7 +571,7 @@ $ kubectl label nodes k8s-1 disktype-
 
 
 
-# Aula 20 - Pipeline
+# Módulo 20 - Pipeline
 
 ### Construção de Pipeline e rancher-yml para deployment. Pegar o exemplo.
 
@@ -602,7 +602,7 @@ https://github.com/jonathanbaraldi/kubernetes-deploy-jboss
 
 
 
-# Aula 21 - Kubeless
+# Módulo 21 - Kubeless
 
 
 ### Kubeless
@@ -686,7 +686,7 @@ Na interface do Rancher, iremos acessar pelo IP:PORTA no qual a UI foi instalada
 
 
 
-# Aula 22 - Helm
+# Módulo 22 - Helm
 
 
 ### HELM
@@ -715,5 +715,5 @@ $ helm install stable/redis
 As aplicações no catálogo do Rancher são feitas pelo Helm.
 
 
-# Aula 23 - Como construir uma estratégia de containers Enterprise.
+# Módulo 23 - Como construir uma estratégia de containers Enterprise.
 
