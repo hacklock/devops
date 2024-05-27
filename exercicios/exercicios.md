@@ -61,7 +61,7 @@ $ cd devops/exercicios/app
 Iremos fazer o build da imagem do Redis para a nossa aplicação.
 ```sh
 $ cd redis
-$ docker build -t <dockerhub-user>/redis:devops .
+$ docker build -t devopsdosamba2024/redis:devops .
 $ docker run -d --name redis -p 6379:6379 devopsdosamba2024/redis:devops
 $ docker ps
 $ docker logs redis
