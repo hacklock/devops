@@ -5,7 +5,7 @@ services:
     
     nginx:
         restart: "always"
-        image: devopsdosamba/nginx:devops
+        image: devopsdosamba2024/nginx:devops
         ports:
             - "80:80"
         links:
@@ -15,7 +15,7 @@ services:
             
     redis:
         restart: "always"
-        image: devopsdosamba/redis:devops
+        image: devopsdosamba2024/redis:devops
         ports:
             - 6379
 
@@ -34,7 +34,7 @@ services:
 
     node:
         restart: "always"
-        image: devopsdosamba/node:devops
+        image: devopsdosamba2024/node:devops
         links:
             - redis
             - mysql
