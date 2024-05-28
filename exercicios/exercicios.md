@@ -27,10 +27,15 @@ $ sudo su
 $ curl https://releases.rancher.com/install-docker/19.03.sh | sh
 $ usermod -aG docker ubuntu
 ```
+# Módulo Limbo - Se tudo der errado com sua aplicação !!!
+Run this if you want to install the docker-ce on Ubuntu 18.04:
 
-
-
-
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu `lsb_release -cs` test"
+sudo apt update
+sudo apt install docker-ce
+docker -v
 
 # Módulo 5 - Construindo sua aplicação
 
