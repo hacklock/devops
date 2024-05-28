@@ -25,6 +25,7 @@ $ ssh -i devopsdosamba.pem ubuntu@<ip>  - k8s-3         - HOST D
 
 $ sudo su
 $ curl https://releases.rancher.com/install-docker/19.03.sh | sh
+$ curl https://releases.rancher.com/install-docker/<version-number>.sh | sh // Ou a versão que quiser.
 $ usermod -aG docker ubuntu
 ```
 # Módulo Limbo - Se tudo der errado com sua aplicação !!!
