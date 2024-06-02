@@ -24,6 +24,8 @@ $ ssh -i devopsdosamba.pem ubuntu@<ip>  - k8s-2         - HOST C
 $ ssh -i devopsdosamba.pem ubuntu@<ip>  - k8s-3         - HOST D
 
 $ sudo su
+$ sudo apt update
+$ sudo apt upgrade
 $ curl https://releases.rancher.com/install-docker/19.03.sh | sh
 $ sudo apt install docker-ce docker-ce-cli containerd.io // Instale o docker na versão atual
 $ sudo systemctl status docker // Verifique a instalação
