@@ -159,10 +159,6 @@ $ docker-compose down
 
 
 
-
-
-
-
 # Módulo 6 - Rancher - Single Node
 
 ### Instalar Rancher - Single Node
@@ -188,11 +184,6 @@ $ rancher.<dominio> = IP do host A
 
 
 
-
-
-
-
-
 # Módulo 7 - Kubernetes
 
 ### Criar cluster Kubernetes
@@ -206,7 +197,7 @@ Adicionar o host B e host C.
 
 Pegar o seu comando no seu rancher.
 ```sh
-$ docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run rancher/rancher-agent:v2.4.3 --server https://devopsdosamba.com.br --token 4hl29t978br5p2w2nh8kj6pwhxnqj5ls9t8kkt95pf8g5rz2mkl475 --ca-checksum 0390347b7e3b2d4fb4002d6b43cc8dadccfbcc2a48cbf60812e96cd2e2f9acd6 --node-name k8s-1 --etcd --controlplane --worker
+$ sudo docker run -d --privileged --restart=unless-stopped --net=host -v /etc/kubernetes:/etc/kubernetes -v /var/run:/var/run rancher/rancher-agent:v2.4.3 --server https://devopsdosamba.com.br --token z9cdw8kqfqwwwpx6jdtnk4x2hfvgl6k8wc54nlgt7vfnpld78xw444 --ca-checksum 0390347b7e3b2d4fb4002d6b43cc8dadccfbcc2a48cbf60812e96cd2e2f9acd6 --node-name k8s-1 --etcd --controlplane --worker
 ```
 
 
