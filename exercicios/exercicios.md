@@ -35,12 +35,12 @@ $ usermod -aG docker ubuntu
 # Módulo Limbo - Se tudo der errado com sua aplicação !!!
 Run this if you want to install the docker-ce on Ubuntu 18.04:
 
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu `lsb_release -cs` test"
-sudo apt update
-sudo apt install docker-ce
-docker -v
+$ sudo apt install apt-transport-https ca-certificates curl software-properties-common
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu `lsb_release -cs` test"
+$ sudo apt update
+$ sudo apt install docker-ce
+$ docker -v
 
 $ sudo apt install apt-transport-https ca-certificates curl software-properties-common gnupg
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
