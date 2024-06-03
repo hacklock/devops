@@ -176,8 +176,9 @@ Nesse exercício iremos instalar o Rancher 2.2.5 versão single node. Isso signi
 
 Entrar no host A, que será usado para hospedar o Rancher Server. Iremos verficar se não tem nenhum container rodando ou parado, e depois iremos instalar o Rancher.
 ```sh
-$ docker ps -a
+$ docker ps -a 
 $ sudo docker run --privileged -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher // qualquer versão na stable atual
+$ docker logs  14258c3ead2c  2>&1 | grep "Bootstrap Password:" // Verifica o password do rancher
 $ docker run -d --name rancher --restart=unless-stopped -v /opt/rancher:/var/lib/rancher  -p 80:80 -p 443:443 rancher/rancher:v2.4.3
 ```
 Com o Rancher já rodando, irei adicionar a entrada de cada DNS para o IP de cada máquina.
