@@ -261,6 +261,10 @@ $ kubectl get pods -n kube-system // Monstra os pods instalados e rodando
 ### Traefik - DNS
 
 *.rancher.devopsdosamba.com.br
+3.90.20.239 //ip rancher-server
+54.166.236.245  // ip k8s-1
+3.94.209.79    // ip k8s-2
+3.88.128.163  //  ip k8s-3
 
 
 O Traefik é a aplicação de proxy reverso que iremos usar como ingress. Ele irá ficar escutando pelas entradas de DNS que o cluster deve responder. Ele possui um dashboard de  monitoramento e com um resumo de todas as entradas que estão no cluster.
