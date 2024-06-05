@@ -227,10 +227,15 @@ Agora iremos instalar o kubectl, que é a CLI do kubernetes. Através do kubectl
 ```sh
 
 $ sudo apt-get update && sudo apt-get install -y apt-transport-https gnupg2
-$ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
-$ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+$ sudo apt-get install -y apt-transport-https ca-certificates curl  //Instalar pacotes necessários
+$ sudo curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /usr/share/keyrings/kubernetes-archive-keyring.gpg  //Adicionar a chave GPG do Google Cloud
+$ echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list  // Adicionar o repositório do Kubernetes
 $ sudo apt-get update
 $ sudo apt-get install -y kubectl
+$ sudo apt-get install -y snapd // Instalar o snap caso não tenha
+$ sudo snap install kubectl --classic // Instalar o kubectl usando Snap
+$ kubectl version --client // Verifica a versão e se foi instalada corretamente
+
 ```
 
 Com o kubectl instalado, pegar as credenciais de acesso no Rancher e configurar o kubectl.
