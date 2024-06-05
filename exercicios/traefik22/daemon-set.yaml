@@ -39,7 +39,7 @@ spec:
         # Enable the dashboard without requiring a password. Not recommended
         # for production.
         - --api.insecure
-        - --api.dashboard
+        - --api.dashboard=true
 
         # Specify that we want to use Traefik as an Ingress Controller.
         - --providers.kubernetesingress
