@@ -245,6 +245,7 @@ $ vi ~/.kube/config // copia e cola o YAML do kubeconfig
 $ :wq! // Salvar
 $ mkdir -p ~/.kube // cria uma nova pasta caso não existir.
 $ kubectl get nodes  // conecta aos cluster existentes.
+$ kubectl get pods -n kube-system // Monstra os pods instalados e rodando
 ```
 
 
