@@ -250,6 +250,7 @@ $ kubectl get pods -n kube-system // Monstra os pods instalados e rodando
 
 
 # Módulo 8.1 - Kubectl para caso der problema ao não acessar os clusters
+```sh
 $ kubectl apply -f https://raw.githubusercontent.com/containous/traefik/v1.7/examples/k8s/traefik-rbac.yaml --validate=false // desativa a validação
 $ kubectl config view
 $ sudo systemctl restart kubelet
@@ -258,7 +259,7 @@ $ kubectl get nodes
 $ sudo systemctl restart kube-apiserver
 $ sudo systemctl restart kube-controller-manager
 $ sudo systemctl restart kube-scheduler
-
+```
 
 
 
