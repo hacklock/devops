@@ -241,8 +241,10 @@ $ kubectl version --client // Verifica a versão e se foi instalada corretamente
 Com o kubectl instalado, pegar as credenciais de acesso no Rancher e configurar o kubectl.
 
 ```sh
-$ vi ~/.kube/config
-$ kubectl get nodes
+$ vi ~/.kube/config // copia e cola o YAML do kubeconfig
+$ :wq! // Salvar
+$ mkdir -p ~/.kube // cria uma nova pasta caso não existir.
+$ kubectl get nodes  // conecta aos cluster existentes.
 ```
 
 
