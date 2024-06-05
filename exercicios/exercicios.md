@@ -290,6 +290,9 @@ Agora iremos configurar o DNS pelo qual o Traefik irá responder. No arquivo ui.
 ```sh
 $ cd treinamento-kubernetes/exercicios/
 $ kubectl apply -f ui.yml
+$ vi ui.yml
+$ sudo su
+$ chmod -R 777 /home/ubuntu/devops
 ```
 
 
